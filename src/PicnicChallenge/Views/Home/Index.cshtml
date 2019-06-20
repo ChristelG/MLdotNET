@@ -1,0 +1,31 @@
+﻿@model UploadImageForm
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">Picnic challenge</li>
+                        <li class="breadcrumb-item active">Report an issue</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1>Report an issue with a product</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form enctype="multipart/form-data" asp-action="AdditionalDetails" asp-controller="Home">
+                    <div class="form-group">
+                        <label asp-for="Image"></label>
+                        <input asp-for="Image" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Create issue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
